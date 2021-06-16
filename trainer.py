@@ -100,9 +100,9 @@ class Trainer:
         for itr in range(self.epoch):
             losses.append(self._train_epoch())
             if(self.model_name == 'baseline'):
-                torch.save(self.model,'/home/models/baseline/'+str(itr)+'.pth')
+                torch.save(self.model,'./models/baseline/'+str(itr)+'.pth')
             if(self.model_name == 'new'):
-                torch.save(self.model,'/home/models/new/'+str(itr)+'.pth')
+                torch.save(self.model,'./models/method/'+str(itr)+'.pth')
             self._val_epoch(itr)
             self._test_epoch(itr)
         
