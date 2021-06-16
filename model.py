@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on 13 15:44:48 2021
-"""
 
 from transformers import BertTokenizer
 from transformers import BertTokenizer,BertModel,BertConfig
