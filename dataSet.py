@@ -48,10 +48,7 @@ class Dataset(Dataset):
                         newtext += " Y"
                     else:
                         newtext = newtext + " " + d['y']
-#                     newtext += d['x']
-#                     newtext += " [SEP]"
-#                     newtext += d['y']
-#                     newtext += " [SEP]"
+                    newtext += " [SEP]"
                                   
                     text_dict = self.tokenizer.encode_plus(newtext, return_attention_mask=True)
                     l = len(text_dict['input_ids'])
