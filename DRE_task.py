@@ -53,8 +53,8 @@ def train(model, train_data, val_data, test_data, model_name):
 train_data = Dataset(train_path, max_seq_len)
 val_data = Dataset(val_path, max_seq_len)
 test_data = Dataset(test_path, max_seq_len)
-model_1 = DREmodel().to(device)
-#model_2 = new_DREmodel().to(device)
-train(model_1, train_data, val_data, test_data, model_name='baseline')
-#train(model_2, train_data, val_data, test_data, model_name='new')
+#model_1 = DREmodel().to(device)
+model_2 = new_DREmodel().to(device)
+#train(model_1, train_data, val_data, test_data, model_name='baseline')
+train(model_2, train_data, val_data, test_data, model_name='new')
 
