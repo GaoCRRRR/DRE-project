@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Jun 13 16:12:13 2021
-
-@author: 54692
-"""
-
 
 from torch.utils.data import Dataset
 from transformers import BertTokenizer
